@@ -5,33 +5,33 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class HashMapTest {
- public static void main(String[] args) {
-	 // Map²»Í¬ÓÚList£¬ËüµÄkey²»Ò»¶¨ÊÇÊı×Ö
-     Map map = new HashMap();
-     map.put("·è¿ñJava½²Òå",109);
-     map.put("·è¿ñiOS½²Òå",10);
-     map.put("·è¿ñAjax½²Òå",79);
+    public static void main(String[] args) {
+        // Mapä¸åŒäºListï¼Œå®ƒçš„keyä¸ä¸€å®šæ˜¯æ•°å­—
+        Map map = new HashMap();
+        map.put("ç–¯ç‹‚Javaè®²ä¹‰",109);
+        map.put("ç–¯ç‹‚iOSè®²ä¹‰",10);
+        map.put("ç–¯ç‹‚Ajaxè®²ä¹‰",79);
 
-     // Èç¹ûĞÂµÄvalue¸²¸ÇÁËÔ­ÓĞµÄvalue£¬¸Ã·½·¨·µ»Ø±»¸²¸ÇµÄvalue
-     System.out.println(map.put("·è¿ñiOS½²Òå",99)); // Êä³ö10
-     System.out.println(map);
+        // å¦‚æœæ–°çš„valueè¦†ç›–äº†åŸæœ‰çš„valueï¼Œè¯¥æ–¹æ³•è¿”å›è¢«è¦†ç›–çš„value
+        System.out.println(map.put("ç–¯ç‹‚iOSè®²ä¹‰",99)); // è¾“å‡º10
+        System.out.println(map);
 
-     // ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨key
-     System.out.println("ÊÇ·ñ°üº¬ÖµÎª·è¿ñiOS½²Òåkey£º"+map.containsKey("·è¿ñiOS½²Òå"));
-     System.out.println("ÊÇ·ñ°üº¬ÖµÎª99 value£º"+map.containsValue(99));
+        // åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®škey
+        System.out.println("æ˜¯å¦åŒ…å«å€¼ä¸ºç–¯ç‹‚iOSè®²ä¹‰keyï¼š"+map.containsKey("ç–¯ç‹‚iOSè®²ä¹‰"));
+        System.out.println("æ˜¯å¦åŒ…å«å€¼ä¸º99 valueï¼š"+map.containsValue(99));
 
-     // ±éÀúmap
-     System.out.println("±éÁ¿·½·¨1-------------");
-     for (Object key : map.keySet()) {
-         System.out.println(key+"-->"+map.get(key));
-     }
-     
-     System.out.println("±éÁ¿·½·¨2----------------");
-     Iterator<Map.Entry<Object,Object>> it=map.entrySet().iterator();  
-     while(it.hasNext()){  
-          Map.Entry<Object,Object> entry=it.next();  
-          System.out.println("key:"+entry.getKey());  
-          System.out.println("value:"+entry.getValue());  
-     }  
-}
+        // éå†map
+        System.out.println("éé‡æ–¹æ³•1-------------");
+        for (Object key : map.keySet()) {
+            System.out.println(key+"-->"+map.get(key));
+        }
+
+        System.out.println("éé‡æ–¹æ³•2----------------");
+        Iterator<Map.Entry<Object,Object>> it=map.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<Object,Object> entry=it.next();
+            System.out.println("key:"+entry.getKey());
+            System.out.println("value:"+entry.getValue());
+        }
+    }
 }

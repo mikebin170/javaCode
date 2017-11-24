@@ -2,25 +2,25 @@ package com.testfan;
 
 public class StringTest {
 	public static void main(String[] args) {
-		
-		    String str1="aaa";
-		    String str2="aaa";
-		    System.out.println("===========test1============");
-		    System.out.println(str1==str2);//true ¿ÉÒÔ¿´³östr1¸ústr2ÊÇÖ¸ÏòÍ¬Ò»¸ö¶ÔÏó 
-		    
-		    //new String() ´´½¨µÄ×Ö·û´®²»·ÅÈë³£Á¿³ØÖĞ
-		    String str3=new String("aaa");
-		    String str4=new String("aaa");
-		    System.out.println("===========test2============");
-		    System.out.println(str3==str4);//false ¿ÉÒÔ¿´³öÓÃnewµÄ·½Ê½ÊÇÉú³É²»Í¬µÄ¶ÔÏó 
-		    System.out.println(str3.equals(str4));//true
-		    
-		    StringBuffer sb = new StringBuffer("TestString");
-		    sb.insert(4,false);
-            System.out.println(sb.toString());
-		    
-		    
-		    
+
+		String str1="aaa";
+		String str2="aaa";
+		System.out.println("===========test1============");
+		System.out.println(str1==str2);//true å¯ä»¥çœ‹å‡ºstr1è·Ÿstr2æ˜¯æŒ‡å‘åŒä¸€ä¸ªå¯¹è±¡
+
+		//new String() åˆ›å»ºçš„å­—ç¬¦ä¸²ä¸æ”¾å…¥å¸¸é‡æ± ä¸­
+		String str3=new String("aaa");
+		String str4=new String("aaa");
+		System.out.println("===========test2============");
+		System.out.println(str3==str4);//false å¯ä»¥çœ‹å‡ºç”¨newçš„æ–¹å¼æ˜¯ç”Ÿæˆä¸åŒçš„å¯¹è±¡
+		System.out.println(str3.equals(str4));//true
+
+		StringBuffer sb = new StringBuffer("TestString");
+		sb.insert(4,false);
+		System.out.println(sb.toString());
+
+
+
 	}
 
 }

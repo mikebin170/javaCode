@@ -1,15 +1,15 @@
 package com.testfan;
 
 public class IntegerTest {
-	
+
 	public static void main(String[] args) {
-		    int a1 = 128;  
-		    Integer a2 = 128; 
-		    Integer a3 = new Integer(128); // ÕâÑùĞ´ÓÅ»¯ºóÆäÊµ¾ÍÊÇa2µÄĞ´·¨  
-		    // Integer»á×Ô¶¯²ğÏäÎªint£¬ËùÒÔÎªtrue  
-		    System.out.println("a1 == a2: " + (a1 == a2));  // true
-		    System.out.println("a2 == a3: " + (a2 == a3));  // false 
-		    System.out.println("a1 == a3: " + (a2.equals(a3)));  // true ¶ÔÏó±È½Ï
+		int a1 = 128;
+		Integer a2 = 128;
+		Integer a3 = new Integer(128); // è¿™æ ·å†™ä¼˜åŒ–åå…¶å®å°±æ˜¯a2çš„å†™æ³•
+		// Integerä¼šè‡ªåŠ¨æ‹†ç®±ä¸ºintï¼Œæ‰€ä»¥ä¸ºtrue
+		System.out.println("a1 == a2: " + (a1 == a2));  // true
+		System.out.println("a2 == a3: " + (a2 == a3));  // false
+		System.out.println("a1 == a3: " + (a2.equals(a3)));  // true å¯¹è±¡æ¯”è¾ƒ
 	}
 
 }

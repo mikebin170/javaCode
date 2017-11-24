@@ -3,8 +3,8 @@ package com.testfan;
 public class LoopTest {
 
 	public static void main(String[] args) {
-		//Êä³ö10µ½20Ö®¼äÊý×Ö
-		
+		//è¾“å‡º10åˆ°20ä¹‹é—´æ•°å­—
+
 		// for
 		for (int x = 10; x < 20; x++) {
 			System.out.println("for value of x : " + x);
@@ -23,7 +23,7 @@ public class LoopTest {
 			x++;
 		} while (x < 20);
 
-		
+
 
 	}
 }

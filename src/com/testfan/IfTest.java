@@ -5,11 +5,11 @@ public class IfTest {
 		int score = Integer.valueOf(args[0]);
 
 		if(score>90){
-			System.out.println("½±Àøiphone7s");
+			System.out.println("å¥–åŠ±iphone7s");
 		}else if(score>70){
-			System.out.println("½±ÀøºìÃ×");
+			System.out.println("å¥–åŠ±çº¢ç±³");
 		}else {
-			System.out.println("¸©ÎÔ³Å500ËÅºò");
+			System.out.println("ä¿¯å§æ’‘500ä¼ºå€™");
 		}
 	}
 

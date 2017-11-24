@@ -4,51 +4,51 @@ class TestFinal {
 	static{
 		System.out.println("1111");
 	}
-	
+
 	public TestFinal(){
 		System.out.println("TestFinal ");
 	}
-	 
+
 	public String name="11";
-	
-	
+
+
 	public void f1() {
 		System.out.println("f1");
 	}
 
-	// ÎŞ·¨±»×ÓÀà¸²¸ÇµÄ·½·¨
+	// æ— æ³•è¢«å­ç±»è¦†ç›–çš„æ–¹æ³•
 	public final void f2() {
 		System.out.println("f2");
 	}
 
 	private void f3() {
-		
+
 		System.out.println("f4");
 	}
 
 	public String getName() {
 		return name;
 	}
-	
+
 }
 
 
 public class TestFinal2 extends TestFinal {
-	
+
 	public TestFinal2(){
 		System.out.println("TestFinal2 ");
 	}
-	
-    public void f3() {
-    	this.f3();
+
+	public void f3() {
+		this.f3();
 		System.out.println("f4");
 	}
 
 	public void f1() {
 		//super.f1();
-		System.out.println("Test1¸¸Àà·½·¨f1±»¸²¸Ç!");
+		System.out.println("Test1çˆ¶ç±»æ–¹æ³•f1è¢«è¦†ç›–!");
 	}
-	
+
 //	public void f2() {
 //		System.out.println("f2");
 //	}
@@ -58,12 +58,12 @@ public class TestFinal2 extends TestFinal {
 		TestFinal2 t2 = new TestFinal2();
 		TestFinal2 t3 = new TestFinal2();
 		//t3.f3();
-		
+
 		//TestFinal t1 = new TestFinal();
-	
+
 		//t.name="111";
 		t.f1();
-		//t.f2(); // µ÷ÓÃ´Ó¸¸Àà¼Ì³Ğ¹ıÀ´µÄfinal·½·¨
-	    //t.f3(); //µ÷ÓÃÊ§°Ü£¬ÎŞ·¨´Ó¸¸Àà¼Ì³Ğ»ñµÃ
+		//t.f2(); // è°ƒç”¨ä»çˆ¶ç±»ç»§æ‰¿è¿‡æ¥çš„finalæ–¹æ³•
+		//t.f3(); //è°ƒç”¨å¤±è´¥ï¼Œæ— æ³•ä»çˆ¶ç±»ç»§æ‰¿è·å¾—
 	}
 }

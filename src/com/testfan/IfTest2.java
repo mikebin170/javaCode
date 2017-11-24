@@ -1,22 +1,22 @@
 package com.testfan;
 
 public class IfTest2 {
-	
+
 	public static void main(String[] args) {
 		String today = args[0];
 		String weather = args[1];
-		
-		if("ÖÜÄ©".equals(today)){
-			if("ÇçÀÊ".equals(weather)){
-				System.out.println("ÊÒÍâÓÎÍæ");
+
+		if("å‘¨æœ«".equals(today)){
+			if("æ™´æœ—".equals(weather)){
+				System.out.println("å®¤å¤–æ¸¸ç©");
 			}else{
-				System.out.println("ÊÒÄÚÓÎÍæ");
+				System.out.println("å®¤å†…æ¸¸ç©");
 			}
-			
+
 		}else{
-			System.out.println("È¥ÉÏ°à");
+			System.out.println("å»ä¸Šç­");
 		}
-		
+
 	}
 
 }

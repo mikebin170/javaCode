@@ -7,7 +7,7 @@ public class IfTest3 {
 		int score2 = Integer.valueOf(args[1]);
 
 		if (score1 > 90 && score2 > 90) {
-            System.out.println("”≈–„");
+			System.out.println("–ú‚îº–ª—Å");
 		}
 
 	}

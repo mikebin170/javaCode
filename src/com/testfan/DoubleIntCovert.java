@@ -4,14 +4,14 @@ public class DoubleIntCovert {
 	public static void main(String[] args) {
 		double firstAvg = 81.29;
 		int rise = 2;
-		
+
 		System.out.println(firstAvg + rise);
-		
-		//½ØÈ¡ 
+
+		//æˆªå– 
 		System.out.println((int)(firstAvg + rise));
-		
-	    //²¹Æë
+
+		//è¡¥é½
 		System.out.println((double)(81 + rise));
-		
+
 	}
 }

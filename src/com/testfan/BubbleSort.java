@@ -1,33 +1,33 @@
 package com.testfan;
 
 /*
- * Ã°ÅİÅÅĞò
+ * å†’æ³¡æ’åº
  */
-// ÎÊÌâ1 Èç¹û10¸öÊı¾İĞèÒª¶àÉÙÌËÀ´ÅÅĞò?
-// ÎÊÌâ2 Ã¿´ÎÄÚ²¿ÅÅĞò¸ÉµÄÊ²Ã´£¿
-//ÎÊÌâ3 Ã¿´ÎÄÚ²¿ÅÅĞò¶¼Ò»Ñù´ÎÊıÂğ£¿
+// é—®é¢˜1 å¦‚æœ10ä¸ªæ•°æ®éœ€è¦å¤šå°‘è¶Ÿæ¥æ’åº?
+// é—®é¢˜2 æ¯æ¬¡å†…éƒ¨æ’åºå¹²çš„ä»€ä¹ˆï¼Ÿ
+//é—®é¢˜3 æ¯æ¬¡å†…éƒ¨æ’åºéƒ½ä¸€æ ·æ¬¡æ•°å—ï¼Ÿ
 //http://www.cnblogs.com/shen-hua/p/5422676.html
 public class BubbleSort {
 	public static void main(String[] args) {
 		String t = "";
 		int[] arr = { 6, 3, 8, 2, 9, 1 };
-		System.out.println(" ÅÅĞòÇ°");
+		System.out.println(" æ’åºå‰");
 		for (int i : arr) {
 			System.out.print(i);
 		}
 		System.out.println();
-		// Ëã·¨Ë¼ÏëÊÇÃ¿´ÎÑ¡³öÒ»¸öÖµ
-		for (int i = 0; i < arr.length - 1; i++) {// Íâ²ãÑ­»·¿ØÖÆÅÅĞòÌËÊı
-			for (int j = 0; j < arr.length - 1 - i; j++) {// ÄÚ²ãÑ­»·¿ØÖÆÃ¿Ò»ÌËÅÅĞò¶àÉÙ´Î,°Ñ×î´óÖµÍùºó
+		// ç®—æ³•æ€æƒ³æ˜¯æ¯æ¬¡é€‰å‡ºä¸€ä¸ªå€¼
+		for (int i = 0; i < arr.length - 1; i++) {// å¤–å±‚å¾ªç¯æ§åˆ¶æ’åºè¶Ÿæ•°
+			for (int j = 0; j < arr.length-1-i; j++) {// å†…å±‚å¾ªç¯æ§åˆ¶æ¯ä¸€è¶Ÿæ’åºå¤šå°‘æ¬¡,æŠŠæœ€å¤§å€¼å¾€å
 				if (arr[j] > arr[j + 1]) {
 					int temp = arr[j];
 					arr[j] = arr[j + 1];
 					arr[j + 1] = temp;
 				}
 			}
-			break;
+
 		}
-		System.out.println("ÅÅĞòºóµÄÊı×éÎª");
+		System.out.println("æ’åºåçš„æ•°ç»„ä¸º");
 		for (int i : arr) {
 			System.out.print(i);
 		}

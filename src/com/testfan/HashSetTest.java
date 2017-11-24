@@ -5,28 +5,28 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 public class HashSetTest {
-	
+
 	public static void main(String[] args) {
-		   HashSet<Object> h=new HashSet<Object>();
-	       h.add("1");
-	       h.add("1");
-	       h.add("2nd");
-	       h.add(new Integer(3));
-	       h.add(new Double(4.0));
-	       h.add("2nd");            //ÖØ¸´ÔªËØ£¬Î´±»Ìí¼Ó
-	       h.add(new Integer(3));      //ÖØ¸´ÔªËØ£¬Î´±»Ìí¼Ó
-	       h.add(new Date());
-	       System.out.println("¿ªÊ¼£ºsize="+h.size());
-	       Iterator it=h.iterator();
-	       while(it.hasNext())
-	       {
-	           Object o=it.next();
-	           System.out.println(o);
-	       }
-	       
-	       h.remove("2nd");
-	       System.out.println("ÒÆ³ıÔªËØºó£ºsize="+h.size());
-	       System.out.println(h);
+		HashSet<Object> h=new HashSet<Object>();
+		h.add("1");
+		h.add("1");
+		h.add("2nd");
+		h.add(new Integer(3));
+		h.add(new Double(4.0));
+		h.add("2nd");            //é‡å¤å…ƒç´ ï¼Œæœªè¢«æ·»åŠ 
+		h.add(new Integer(3));      //é‡å¤å…ƒç´ ï¼Œæœªè¢«æ·»åŠ 
+		h.add(new Date());
+		System.out.println("å¼€å§‹ï¼šsize="+h.size());
+		Iterator it=h.iterator();
+		while(it.hasNext())
+		{
+			Object o=it.next();
+			System.out.println(o);
+		}
+
+		h.remove("2nd");
+		System.out.println("ç§»é™¤å…ƒç´ åï¼šsize="+h.size());
+		System.out.println(h);
 	}
 
 }

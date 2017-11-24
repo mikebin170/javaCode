@@ -4,10 +4,10 @@ public class TablesTest {
 	public static void main(String[] args) {
 		for (int i = 1; i <= 9; i++) {
 			for (int n = 1; n <= i; n++) {
-				//ºá×ø±ê
+				//æ¨ªåæ ‡
 				System.out.print(i + " x " + n + " = " + i * n + " ");
 			}
-			//Ã¿×Ý×ø±ê»»ÐÐÒ»´Î
+			//æ¯çºµåæ ‡æ¢è¡Œä¸€æ¬¡
 			System.out.println();
 		}
 	}
