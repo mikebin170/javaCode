@@ -1,0 +1,3 @@
+类型;地址;参数;头部
+get;http://123.58.251.183:8080/goods/UserServlet?method=loginMobile&loginname=test1&loginpass=test1;
+post;http://123.58.251.183:8080/goods/UserServlet;method=loginMobile&loginname=test1&loginpass=test1;
